@@ -94,6 +94,7 @@ input {
   border: 1px solid var(--lightGrey);
   font-size: 23px;
   font-weight: bold;
+  font-family: poppins-bold;
 
 }
 
