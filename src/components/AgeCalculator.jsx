@@ -69,7 +69,7 @@ class AgeCalculator extends React.Component{
           </div>
           <div className='input-ctn'>
            <label name="year" htmlFor="year" style={{color: this.state.year > 2023 ? "red" : "var(--smokeGrey)" }}>YEAR</label>
-           <input name="year" onChange={this.handleYearChange} required></uiredinput>
+           <input name="year" onChange={this.handleYearChange} required></input>
            <p className={this.state.year > 2023 ? "block" : "hidden" }>Must be in the past</p>
           </div>
         </div>
