@@ -64,12 +64,12 @@ class AgeCalculator extends React.Component{
           </div>
           <div className='input-ctn'>
            <label name="month" htmlFor="month" style={{color: this.state.month > 12 ? "red" : "var(--smokeGrey)" }}>MONTH</label>
-           <input name="month" onChange={this.handleMonthChange}></input>
+           <input name="month" onChange={this.handleMonthChange} required></input>
            <p className={this.state.month > 12 ? "block" : "hidden" }>Must be a valid month</p>
           </div>
           <div className='input-ctn'>
            <label name="year" htmlFor="year" style={{color: this.state.year > 2023 ? "red" : "var(--smokeGrey)" }}>YEAR</label>
-           <input name="year" onChange={this.handleYearChange}></input>
+           <input name="year" onChange={this.handleYearChange} required></uiredinput>
            <p className={this.state.year > 2023 ? "block" : "hidden" }>Must be in the past</p>
           </div>
         </div>
