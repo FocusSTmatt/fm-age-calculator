@@ -60,16 +60,17 @@ class AgeCalculator extends React.Component{
          <div className='input-ctn'>
            <label htmlFor="day" style={{color: this.state.day > 31 ? "red" : "var(--smokeGrey)" }}>DAY</label>
            <input name="day" type="number" onChange={this.handleDayChange} required></input>
-           <p className={this.state.day > 31 || this.state.day < 1 ? "block" : "hidden" }>{this.state.isClicked ? "Must be a valid day" : ""}</p>
+           <p className={this.state.day > 31 ? "block" : "hidden" }> Must be a valid date</p>
           </div>
           <div className='input-ctn'>
-           <label htmlFor="month">MONTH</label>
+           <label htmlFor="month" style={{color: this.state.month > 12 ? "red" : "var(--smokeGrey)" }}>MONTH</label>
            <input name="month" onChange={this.handleMonthChange}></input>
            <p className={this.state.month > 12 ? "block" : "hidden" }>Must be a valid month</p>
           </div>
           <div className='input-ctn'>
-           <label htmlFor="year">YEAR</label>
+           <label htmlFor="year" style={{color: this.state.year > 2023 ? "red" : "var(--smokeGrey)" }}>YEAR</label>
            <input name="year" onChange={this.handleYearChange}></input>
+           <p className={this.state.year > 2023 ? "block" : "hidden" }>Must be in the past</p>
           </div>
         </div>
       <div className='button-ctn'>
